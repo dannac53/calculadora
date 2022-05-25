@@ -34,9 +34,7 @@ const About = () => {
             grupo en el html, para ello, hay un constante que se llama members, con esa 
             informacion vas a pintar los diferentes cuadros, le agregas un key al 
             div que que los contiene, tambien le pones el nombre, carrera y las descripcion.
-            NOTA: para darle mas complejidad al reto, si un integrante no tiene foto, entonces debes
-            colocar la foto que aparece ahi (la url esa que ves en la linea 42).
-            TIP: para eso se usa una expresion terciaria */}
+            */}
           <div className="col-6 row mb-3"> {/* Este es el div que contiene a un integrante*/}
             <div className="col-4">
               <img
