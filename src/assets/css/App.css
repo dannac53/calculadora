@@ -34,3 +34,9 @@ font-size: 13px;
     border-color: var(--blue);
     color: var(--blue);
 }
+span{
+    font-size: 20px;
+}
+p{
+    font-size: 12px;
+}

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className="container">
@@ -23,6 +25,9 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <Link to={"/about"} className="btn btn-primary">
+        Integrantes
+      </Link>
     </div>
   );
 };
