@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@100;200;300&display=swap');
+
+:root{
+    --blue: #764AF1; 
+    --poppins: 'Poppins', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    font-family: var(--poppins);
+}
+
+.container{
+font-size: 13px;
+}
+
+.card{
+    border: 0;
+    width: 60rem;
+}
+
+.bg{
+    background: var(--blue);
+}
+
+.title{
+    font-family: var(--montserrat);
+    font-weight: 800;
+}
+
+
+.btn-primary{
+    background: transparent;
+    border-color: var(--blue);
+    color: var(--blue);
+}
