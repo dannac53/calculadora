@@ -2,6 +2,7 @@
 
 :root{
     --blue: #764AF1; 
+    --gray: DBDFFD;
     --poppins: 'Poppins', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
 }
@@ -21,6 +22,7 @@ font-size: 13px;
 
 .bg{
     background: var(--blue);
+    height: 120vh;
 }
 
 .title{
@@ -34,9 +36,46 @@ font-size: 13px;
     border-color: var(--blue);
     color: var(--blue);
 }
+
+.btn-secondary{
+    background: transparent;
+    border-color: var(--gray);
+    color: var(--gray);
+}
+
 span{
     font-size: 20px;
 }
 p{
     font-size: 12px;
 }
+
+scroll {
+    max-height: 10rem;
+    overflow: auto;
+  }
+  
+  .scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .scroll::-webkit-scrollbar:vertical {
+    width: 6px;
+  }
+  
+  .scroll::-webkit-scrollbar-button:increment,
+  tbody::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .scroll::-webkit-scrollbar-thumb {
+    background: #91D5F5;
+    border-radius: 10px;
+  }
+  
+  .scroll::-webkit-scrollbar-track {
+    background: #EEEEEE;
+    border-radius: 10px;
+    width: 6px;
+  }
+  

@@ -13,7 +13,8 @@ const About = () => {
       urlImg: require("./assets/img/imgRoberto.jpg"),
       name: "Roberto Bula",
       race: "Ingeniería de sistemas",
-      description: "Las frias los fines de semana y jugar carlos duti sin control",
+      description:
+        "Las frias los fines de semana y jugar carlos duti sin control",
     },
     {
       urlImg: require("./assets/img/imgAndres.jpg"),
@@ -24,10 +25,7 @@ const About = () => {
   ];
 
   return (
-    <div
-      className="bg d-flex justify-content-center align-items-center pt-3 pb-3"
-      style={{ minHeight: "100vh" }}
-    >
+    <div className="bg d-flex justify-content-center align-items-center pt-3 pb-3">
       <div className="card p-5">
         <h5 className="title">Integrantes</h5>
         <div className="row mt-3">
