@@ -1,6 +1,7 @@
 import { Field, Form, Formik } from "formik";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import React from "react";
 import { calculate } from "./operations";
 
 const Home = () => {
@@ -135,7 +136,7 @@ const Home = () => {
                         type="text"
                         className="form-control"
                         disabled
-                        value={data?.delta}
+                        value={data.delta}
                       />
                     </div>
                   </div>
@@ -172,7 +173,7 @@ const Home = () => {
               </tr>
             </thead>
             <tbody>
-              {data?.table.map((row) => (
+              {data.table.map((row) => (
                 <tr>
                   <td>{row.x}</td>
                   <td>{row.y}</td>
@@ -185,7 +186,7 @@ const Home = () => {
             <tfoot>
               <tr>
                 <th>Area</th>
-                <th>{data?.area}</th>
+                <th>{data.area}</th>
               </tr>
             </tfoot>
           </table>
