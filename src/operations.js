@@ -11,7 +11,8 @@ export const calculate = ({ a, b, method, func, n = 0 }) => {
   const delta = calculateDelta({ a, b, method }, n);
   let table = [];
   for (let i = a; i <= b; i += delta) {
-    table.push({ x: i, y: eval(func.replace("x", i)) });
+    console.log(func.replaceAll("x", i));
+    table.push({ x: i, y: eval(func.replaceAll("x", i)) });
     func = funcO;
   }
   table = result({ table, method });
@@ -29,7 +30,7 @@ const result = ({ table, method }) => {
         else row.y = row.y * 32;
       }
     });
-  } else if (method === "simpsonO") {
+  } else if (method === "simpsono") {
     table.map((row, index) => {
       if (index !== 0 && index !== lon - 1) {
         if (index % 2 === 0) row.y = row.y * 2;

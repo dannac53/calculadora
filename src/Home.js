@@ -173,8 +173,8 @@ const Home = () => {
               </tr>
             </thead>
             <tbody>
-              {data.table.map((row) => (
-                <tr>
+              {data.table.map((row, index) => (
+                <tr key={index}>
                   <td>{row.x}</td>
                   <td>{row.y}</td>
                 </tr>
